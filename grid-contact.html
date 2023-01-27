@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <style>
+        form {
+            width: 38%;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #24243e;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+            
+            
+    
+        }
+
+        Button {
+    
+            width: 100%;
+            padding: 0.6rem 2rem;
+            background-color: #ff5574;
+            border: 1px solid #ff5574;
+            border-radius: 5px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 0.8rem;
+            cursor: pointer;
+            grid-column: span 3;
+            grid-row: span 2;
+            
+            
+
+        }
+        .label-1{
+            color: aliceblue;
+            grid-column: span 2;
+        
+
+        }
+        .label-2{
+            color: aliceblue;
+            grid-row:span 2;
+            grid-column: span 2;
+
+        }
+        .label-3{
+            color: aliceblue;
+            grid-column: span 2;
+
+        }
+        .input{
+            background-color:rgb(51,55,68);
+            margin-top:0.4rem;
+            height:02rem;
+            width: 100%;
+            border:1px solid rgb(51,55,68);
+            border-radius:0.5rem;
+            padding:0.6rem;
+        
+        }
+        label{
+            font-size:medium;
+            
+        }
+    </style>
+</head>
+
+<body style="background-color:rgb(67,71,83);">
+    <form>
+
+        <div class="label-1">
+            <label>Full Name:</label><br>
+            <input class="input" type="text" placeholder="Full Name"><br><br>
+        </div>
+
+        <div class="label-2">
+            <label>Message</label><br>
+            <textarea style="background-color:rgb(51,55,68);width:100%;border:1px solid rgb(51,55,68)  ;border-radius:0.5rem;padding:0.5rem;font-size: large;" name=" message" id="" cols="03" rows="08" placeholder="Your Message"></textarea>
+        </div>
+
+        <div class="label-3">
+            <label>Email Addres</label><br>
+            <input class="input" type="email" placeholder="Email Addres"><br><br>
+        </div>
+
+        <div style="grid-column:span 4">
+            <BUtton type="submit">Send a MeSSAGE</BUtton><br>
+        </div>
+
+
+    </form>
+</body>
+
+</html>
